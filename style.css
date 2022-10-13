@@ -63,3 +63,12 @@ body {
     padding-top: 10px;
     border-top: 1px solid #ccc;
 }
+.bottom-content span {
+    color: #6d6d6d;
+    font-size: 14px;
+}
+.bottom-content .settings i {
+    cursor: pointer;
+    font-size: 15px;
+    color: #6d6d6d;
+}
