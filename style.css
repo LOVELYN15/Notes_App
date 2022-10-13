@@ -27,3 +27,23 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.add-box, .icon, .bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-box .icon {
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    border: 2px dashed powderblue;
+    font-size: 40px;
+    color: #88abff;
+    cursor: pointer;
+}
+.add-box p {
+    font-weight: 500;
+    margin-top: 20px;
+    color: #88abff;
+}
