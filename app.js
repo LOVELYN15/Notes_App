@@ -1,19 +1,32 @@
-const addBox = document.querySelector(".add-box")
-const popupBox = document.querySelector(".popup-box")
+const addBox = document.querySelector(".add-box");
+const popupBox = document.querySelector(".popup-box");
 
-const months = ['jan', 'feb', 'mar', 'apr','may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+const months = [
+    "jan", 
+    "feb", 
+    "mar", 
+    "apr",
+    "may", 
+    "jun", 
+    "jul",
+    "aug", 
+    "se", 
+    "oct", 
+    "nov", 
+    "dec",
+];
 
-const closeBox = popupBox.querySelector("header i")
-const titleTag = popupBox.querySelector("input")
-const descTag = popupBox.querySelector("textarea")
-const addBtn = popupBox.querySelector("button")
+const closeBox = popupBox.querySelector("header i");
+const titleTag = popupBox.querySelector("input");
+const descTag = popupBox.querySelector("textarea");
+const addBtn = popupBox.querySelector("button");
 
-const notes = JSON.parse (localStorage.getItem('notes') || '[]')
+const notes = JSON.parse (localStorage.getItem("notes") || "[]");
 
-const menuel = document.querySelector('.iconel')
+const menuel = document.querySelector(".iconel");
 
 const showNotes = () => {
-    document.querySelectorAll('.note').forEach( note => note.remove())
+    document.querySelectorAll(".note").forEach( note => note.remove());
     notes.forEach((note , index) => {
         let litag = ` <li class="note">
         <div class="details">
@@ -39,7 +52,7 @@ const showNotes = () => {
 function showMenu(elem) {
     elem.parentElement.classList.add("show");
     document.onclick = (e) => {
-        if (e.target.tagName !- "I" || e.target != elem) {
+        if (e.target.tagName != "I" || e.target != elem) {
             elem.parentElement.classList.remove("show");
         }
     };
