@@ -72,3 +72,31 @@ body {
     font-size: 15px;
     color: #6d6d6d;
 }
+.settings {
+    position: relative;
+}
+.settings .menu {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    right: -4px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+}
+.settings .show .menu {
+    transform: scale(1);
+}
+.settings .menu li {
+    height: 25px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 17px 15px;
+}
