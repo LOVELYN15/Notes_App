@@ -181,7 +181,10 @@ form .row label {
     pointer-events: none;
     transition: all 0.25s ease;
 }
-.popup-box.show {
+.popup-box .show {
     opacity: 1;
     pointer-events: auto;
+}
+.hide-icon {
+    display: none;
 }
