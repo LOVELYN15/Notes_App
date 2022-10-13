@@ -175,3 +175,13 @@ form .row label {
     border-radius: 4px;
     color: #fff;
 }
+.popup-box,
+.popup-box.popup {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+.popup-box.show {
+    opacity: 1;
+    pointer-events: auto;
+}
